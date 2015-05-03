@@ -7,26 +7,22 @@
 
 # Git
 
-* Clone repo
-* Merge feature branch to master with merge commit and resolve conflict
-* Rebase feature branch and merge to master using `fast-forward`
-* Create feature branch from master, add file, commit it and merge it to master
+* Fork and clone repo https://github.com/blabno/pwsz-exam2-git
+* Merge feature branch `feature/subtract` to master with merge commit and resolve conflict if any
+* Rebase feature branch `feature/ping-pong` and merge to master using `fast-forward`
+* Create feature branch from master, add empty file `a.txt` to root directory, commit it and merge it to master
+* `npm test` must pass
 
 # Unit testing with JUnit
 
-* Prove implementation to be wrong
 * Achieve 100% of code coverage for a given method (mockito)
-* Test legacy code
 
 # Static analysis in JavaScript with JSHint
 
-* global, exported
-* curly
-* bitwise (2 scenarios)
-* eqeqeq
-* maxparams
-* unused
+Cleanup static analysis `./node_modules/grunt-cli/bin/grunt jshint`
+
+Remember that `npm test` must pass!
 
 # Jenkins CI
 
-* Create job that checks out code from repo, runs jshint and tests
+* Create job that checks out code from repo this, runs jshint and tests. Commit the jenkins `config.xml` to `jenkins` branch of this repo.
